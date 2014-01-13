@@ -1,0 +1,98 @@
+$theme-color: #F08300;
+
+@import "theme/variables";
+@import "bootstrap.3.0.3/bootstrap";
+@import "font-awesome";
+@import "theme/navbar";
+@import "theme/footer";
+@import "theme/form";
+@import "theme/carousel";
+@import "theme/home";
+@import "theme/products";
+
+/* FIX FOR IE DEVICE_WIDTH BUG
+-------------------------------------------------- */
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+// Color for the placeholder plugin
+.placeholder {
+  color: $input-color-placeholder;
+}
+
+/* FIX FOR GMAP BUG
+-------------------------------------------------- */
+#map-canvas {
+  height: 350px;
+  width: 100%;
+  @include box-sizing(content-box);
+  margin-bottom: $line-height-computed;
+  img {
+    max-width: none;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+  }
+}
+
+.main {
+  padding: 20px 0;
+}
+.container.register  {
+  background-color: $theme-color;
+  color: #fff;
+  h3 {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+.section-title {
+  color: $theme-color;
+  text-align: center;
+  background-color: $gray-lighter;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed;
+}
+.section-content {
+  text-align: center;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed;
+}
+.section-footer {
+  background-color: $gray-dark;
+  color: $gray-light;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed; 
+  h3 {
+    color: #fff;
+  }
+}
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+.nav-tabs {
+  text-align: center;
+}
+.grid {
+  .title {
+    font-size: $font-size-base + 4;
+    line-height: $line-height-computed + 8;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+  }
+}
+
+
+

@@ -1,0 +1,13 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  custom:
+    rates: Rates
+    specifications: Specifications
+    per_day: day
+    per_week: week
+    season_one: "Low Season From april 15 to december 14"
+    season_two: "Middle Season From january 15 to april 14"
+    season_three: "High Season From december 15 to january 14"
+    insurance: "Insurance deductible"

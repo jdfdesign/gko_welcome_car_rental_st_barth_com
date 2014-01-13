@@ -1,0 +1,42 @@
+<%# resource_cache(resource) do %> 
+<article class="container single-product"> 
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <%= render_slideshow_for(resource) %> 
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= page_title(resource.title) %>
+      <br/>
+      <%= render_copy_text(resource.body) %>
+      <br/> 
+      <strong><%= raw "#{t('custom.specifications')}:" %></strong>
+      <%= render_copy_text(resource.specifications) %>
+      <br/> 
+      <strong><%= raw "#{t('custom.rates')}:" %></strong>
+      <table class="rates">
+        <tr>
+          <td><%= raw "#{t('custom.season_one')}&nbsp;:" %></td>
+          <td><%= raw "#{resource.season_one_price_per_day}$ / #{t('custom.per_day')}" %></td>
+          <td><%= raw "#{resource.season_one_price_per_week}$ / #{t('custom.per_week')}" %></td>
+        </tr>
+        <tr>
+          <td><%= raw "#{t('custom.season_two')}&nbsp;:" %></td>
+          <td><%= raw "#{resource.season_two_price_per_day}$ / #{t('custom.per_day')}" %></td>
+          <td><%= raw "#{resource.season_two_price_per_week}$ / #{t('custom.per_week')}" %></td>
+        </tr>
+        <tr>
+          <td><%= raw "#{t('custom.season_three')}&nbsp;:" %></td>
+          <td><%= raw "#{resource.season_three_price_per_day}$ / #{t('custom.per_day')}" %></td>
+          <td><%= raw "#{resource.season_three_price_per_week}$ / #{t('custom.per_week')}" %></td>
+        </tr>
+        <tr>
+          <td><%= raw "#{t('custom.insurance')}&nbsp;:" %></td>
+          <td><%= raw "#{resource.insurance_price_per_day}$ / #{t('custom.per_day')}" %></td>
+          <td><%= raw "#{resource.insurance_price_per_week}$ / #{t('custom.per_week')}" %></td>
+        </tr>
+      </table>
+    </div> 
+  </div>
+</article>
+<%# end %>
+

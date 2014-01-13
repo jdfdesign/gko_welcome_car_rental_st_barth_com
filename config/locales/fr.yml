@@ -1,0 +1,64 @@
+fr:
+  activerecord:
+    models:
+      car_list: Catalogue
+      car: Article
+
+  cars:
+    read_more: "Voir le détail"
+    no_record_found: "Aucun produit n'a été trouvé"
+
+  simple_form:
+    labels:
+      car_list:
+        title: "Titre de la page"
+        body: "Introduction"
+      car:
+        body: "Description" 
+        title: "Nom" 
+        specifications: "Spécifications" 
+        season_one_price_per_day: "Low Season per day"
+        season_one_price_per_week: "Low Season per week"
+        season_two_price_per_day: "Middle Season per day"
+        season_two_price_per_week: "Middle Season per week" 
+        season_three_price_per_day: "High Season per day"
+        season_three_price_per_week: "High Season per week" 
+        insurance_price_per_day: "Insurance per day"
+        insurance_price_per_week: "Insurance per week"
+
+  admin:
+    car_lists:
+      help: "todo" 
+      actions:
+        edit: Catalogue 
+        new: Nouveau catalogue
+        destroy: Supprimer ce catalogue
+        show: Lister les produits
+        view: Voir le catalogue
+        titles:
+          index: Liste des produits
+      tooltips:
+        edit: Modifier le catalogue
+        show: Voir la
+      titles:
+        edit: Modification du catalogue
+             
+    cars: 
+      collection:
+        empty: "Aucun produit n'a été trouvé."
+      actions:
+        new: Ajouter un produit
+        destroy: Supprimer ce produit
+        edit: Modifier ce produit
+        index: Articles
+        view: Voir la page publique de ce produit
+        previous: Previous
+        next: Next
+      tooltips:
+        index: Lister les produits
+      titles:
+        new: Ajout d'un produit
+        index: Liste des produits
+        edit: Modification d'un produit
+      columns:
+        car: Article
