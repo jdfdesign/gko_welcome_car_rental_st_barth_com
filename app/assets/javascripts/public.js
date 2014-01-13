@@ -204,6 +204,8 @@ jQuery(function($){
     //THEME.scrollToTop();
     THEME.placeholder();
     THEME.carousel();
-    THEME.gmap();
+    if(typeof(google) != 'undefined'){
+      THEME.gmap();
+    }
   });
 }); 
