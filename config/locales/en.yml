@@ -2,7 +2,36 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  helpers:
+    submit:
+      reservation:
+        create: "Send"
+  simple_form:
+    labels:
+      reservation:
+        name: "Name"
+        first_name: "First Name"
+        last_name: "Last Name"
+        email: "Your Email"
+        phone: "Your Phone"
+        address: "Address"
+        city: "City"
+        zip_code: "Zip code"
+        car_model: "Car model"	
+        pick_up_date: "Pick up date"        
+        return_date: "Return date"	        
+        arrival: "Arrival"
+        company: "Company"
+        time: "Time"
+        delivery: "Delivery"	
+        time: "Time"
+        comment: "Comment"  
+        baby_seat: "Baby seat"
+        message: "Message"	
   custom:
+    reserve: Reserve
+    back_to_fleet: Back to Fleet
+    promo: 10% off on car price for each reservation made by our website.
     rates: Rates
     specifications: Specifications
     per_day: day

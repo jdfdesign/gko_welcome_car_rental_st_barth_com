@@ -1,5 +1,5 @@
 $theme-color: #FF6600;
-$th-brand-logo-height: 156px;
+$th-brand-logo-height: 37px;
 
 @import "theme/variables";
 @import "bootstrap.3.0.3/bootstrap";
@@ -39,45 +39,14 @@ $th-brand-logo-height: 156px;
   }
 }
 
-.main {
-  padding: 20px 0;
-}
 .page-header {
   border-bottom: 6px solid $page-header-border-color;
   h1 {
     text-transform: uppercase;
+    display: inline-block;
   }
 }
-.section-title {
-  color: $theme-color;
-  text-align: center;
-  background-color: $gray-lighter;
-  padding-top: $line-height-computed;
-  padding-bottom: $line-height-computed;
-}
-.section-content {
-  text-align: center;
-  padding-top: $line-height-computed;
-  padding-bottom: $line-height-computed;
-}
-.section-footer {
-  background-color: $gray-dark;
-  color: $gray-light;
-  padding-top: $line-height-computed;
-  padding-bottom: $line-height-computed; 
-  h3 {
-    color: #fff;
-  }
-}
-.grid {
-  .title {
-    font-size: $font-size-base + 4;
-    line-height: $line-height-computed + 8;
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-  }
-}
+
 
 
 

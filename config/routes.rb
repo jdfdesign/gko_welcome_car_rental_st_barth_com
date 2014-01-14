@@ -4,6 +4,8 @@ GkoWelcomeCarRentalStBarthCom::Application.routes.draw do
 
   match 'car_lists/:car_list_id/:permalink', 
     :to => "cars#show"
+  
+  resources :reservations, :format => :js
     
   namespace :admin do
     resources :sites do

@@ -10,6 +10,17 @@ fr:
 
   simple_form:
     labels:
+      reservation:
+        name: "Name"
+        first_name: "First Name"
+        last_name: "Last Name"
+        email: "Your Email"
+        phone: "Your Phone"
+        guest_count: "Guest Count"
+        location: "Where are you staying in St Barth ?"
+        day: "Day"
+        service: "Time"
+        message: "Special Considerations & Arrangements"
       car_list:
         title: "Titre de la page"
         body: "Introduction"

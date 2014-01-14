@@ -1,0 +1,123 @@
+<%# resource_cache(resource) do %> 
+<div class="container"> 
+  <div class="page-header">
+    <h1><%= resource.title %></h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <article>
+        <%= render_slideshow_for(resource) %>
+        <%= render_copy_text(resource.body) %>
+        <% js_day_format = I18n.locale == :en ? "MM dd, yyyy" : "dd MM yyyy" %>
+        <% ror_day_format = I18n.locale == :en ? "%B %d, %Y" : "%d %B %Y" %>
+        <% @reservation = Reservation.new() unless @reservation %>
+        <%= simple_form_for @reservation, :url => reservations_path, 
+            :html => {:data => { :remote => true, :method => :post }} do |f| %>
+  
+          <div class="row">	
+            <div class="col-xs-12 col-sm-6 form-group">
+              <%= f.text_field :first_name, :class => "form-control required", 
+              :placeholder => "#{t('simple_form.labels.reservation.first_name')} *" %>
+            </div>
+            <div class="col-xs-12 col-sm-6 form-group">
+              <%= f.text_field :last_name, :class => "form-control required", 
+              :placeholder => "#{t('simple_form.labels.reservation.last_name')} *" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 form-group">
+              <%= f.email_field :email, :class => "form-control required", 
+              :placeholder => "#{t('simple_form.labels.reservation.email')} *" %>
+            </div>
+            <div class="col-xs-12 col-sm-6 form-group">
+              <%= f.text_field :phone, :class => "form-control required", 
+              :placeholder => "#{t('simple_form.labels.reservation.phone')} *" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 form-group">
+              <%= f.text_field :address, :class => "form-control required", 
+              :placeholder => "#{t('simple_form.labels.reservation.address')} *" %>
+            </div>
+            <div class="col-xs-12 col-sm-4 form-group">
+              <%= f.text_field :city, :class => "form-control required", 
+              :placeholder => "#{t('simple_form.labels.reservation.city')} *" %>
+            </div>
+            <div class="col-xs-12 col-sm-4 form-group">
+              <%= f.text_field :zip_code, :class => "form-control required", 
+              :placeholder => "#{t('simple_form.labels.reservation.zip_code')} *" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 form-group">
+              <div class="input-group">
+                <%= f.text_field :pick_up_date, :class => "form-control required date", 
+                :data => { :provide => "datepicker", "date-format" => js_day_format, :language => I18n.locale.to_s } %>
+                <span class="input-group-addon"><i class="icon-th"></i></span>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 form-group">
+              <div class="input-group">
+                <%= f.text_field :return_date, :class => "form-control required date", 
+                :data => { :provide => "datepicker", "date-format" => js_day_format, :language => I18n.locale.to_s } %>
+                <span class="input-group-addon"><i class="icon-th"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-4 form-group">
+                <%= f.text_field :arrival, :class => "form-control required", 
+                :placeholder => "#{t('simple_form.labels.reservation.arrival')} *" %>
+              </div>
+              <div class="col-xs-12 col-sm-4 form-group">
+                <%= f.text_field :company, :class => "form-control required", 
+                :placeholder => "#{t('simple_form.labels.reservation.company')} *" %>
+              </div>
+              <div class="col-xs-12 col-sm-4 form-group">
+                <%= f.text_field :time, :class => "form-control required", 
+                :placeholder => "#{t('simple_form.labels.reservation.time')} *" %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-4 form-group">
+                <%= f.text_field :delivery, :class => "form-control required", 
+                :placeholder => "#{t('simple_form.labels.reservation.delivery')} *" %>
+              </div>
+              <div class="col-xs-12 col-sm-4 form-group">
+                <%= f.text_field :time, :class => "form-control required", 
+                :placeholder => "#{t('simple_form.labels.reservation.time')} *" %>
+              </div>
+              <div class="col-xs-12 col-sm-4 form-group">
+                <%= f.text_field :comment, :class => "form-control required", 
+                :placeholder => "#{t('simple_form.labels.reservation.comment')} *" %>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-xs-12 form-group">
+              <%= f.check_box :baby_seat, :class => "form-control required", 
+              :placeholder => "#{t('simple_form.labels.reservation.baby_seat')} *" %>
+            </div>
+            <div class="col-xs-12 form-group">
+
+            </div>
+            <div class="col-xs-12 form-group">
+              <%= f.text_area :message, :class => "form-control required", :rows => "20", :cols => "30", 
+              :placeholder => t('simple_form.labels.reservation.message') %>
+            </div>
+            <input type="text" name="reservation[nickname]" id="reservation_nickname" value="" class="form-control nickname hidden">
+            <div class="col-xs-12 form-group">
+              <%= f.button :submit, :class => "btn-primary btn-block" %>
+            </div>
+            <div class="col-xs-12 form-group">
+              <p id="error" data-alert="" class="alert"><%= t("gko.reservation_error") %></p>
+              <p id="thanks" data-alert="" class="alert alert-success"><%= t("reservation_thanks") %></p>
+              <p id="timedout" data-alert="" class="alert"><%= t("gko.reservation_connection_time_out") %></p>
+              <p id="state" data-alert="" class="alert"><%= @reservation.errors.full_messages.join("<br/>").html_safe %></p>
+            </div>
+          </div>
+          <% end %>
+      </article>
+    </div>
+  </div>
+</div>
+<%# end %>

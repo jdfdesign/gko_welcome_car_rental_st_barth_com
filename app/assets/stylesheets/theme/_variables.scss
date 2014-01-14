@@ -59,7 +59,7 @@ $line-height-base:        1.428571429; // 20/14
 $line-height-computed:    floor($font-size-base * $line-height-base); // ~20px
 
 $headings-font-family:    $font-family-base;
-$headings-font-weight:    500;
+$headings-font-weight:    700;//500;
 $headings-line-height:    1.1;
 $headings-color:          $theme-color;//inherit;
 
@@ -146,13 +146,13 @@ $btn-link-disabled-color:        $gray-light;
 // Forms
 // -------------------------
 
-$input-bg:                       #ccc;//#fff;
+$input-bg:                       #fff;
 $input-bg-disabled:              $gray-lighter;
 
-$input-color:                    $gray;
-$input-border:                   #fff;//#ccc;
-$input-border-radius:            0;//$border-radius-base;
-$input-border-focus:             #fff;//#66afe9;
+$input-color:                    #1a1a1a;//$gray;
+$input-border:                   #ccc;
+$input-border-radius:            $border-radius-base;
+$input-border-focus:             #66afe9;
 
 $input-color-placeholder:        $gray-light;
 
@@ -254,7 +254,7 @@ $grid-float-breakpoint:     $screen-sm-min;
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    $th-brand-logo-height + 8px;//50px
+$navbar-height:                    $th-brand-logo-height + $line-height-computed;//50px
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             0;//$border-radius-base;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2);
@@ -533,13 +533,13 @@ $panel-info-heading-bg:       $state-info-bg;
 
 // Thumbnails
 // -------------------------
-$thumbnail-padding:           4px;
+$thumbnail-padding:           0;//4px;
 $thumbnail-bg:                $body-bg;
-$thumbnail-border:            #ddd;
+$thumbnail-border:            $body-bg;//#ddd;
 $thumbnail-border-radius:     $border-radius-base;
 
 $thumbnail-caption-color:     $text-color;
-$thumbnail-caption-padding:   9px;
+$thumbnail-caption-padding:   9px 0;
 
 
 // Wells
