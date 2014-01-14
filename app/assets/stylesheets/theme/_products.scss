@@ -24,16 +24,17 @@ table.rates {
 // Product list thumbnail
 // --------------------------------------------------
 .thumbnail-item > .thumbnail {
+  background-color: $theme-color;
   position: relative;
   min-height: 210px;
   a {
-    
     &:hover,
     &:focus {
       text-decoration: none;
     }
   }
   .thumbnail-title {
+    color: #fff;
     font-size: 14px;
   }
   .wrap {

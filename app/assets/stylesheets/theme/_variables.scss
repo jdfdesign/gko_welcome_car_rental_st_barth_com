@@ -28,7 +28,7 @@ $brand-info:            #5bc0de;
 // -------------------------
 
 $body-bg:               #fff;
-$text-color:            $gray-light;//$gray-dark;
+$text-color:            $gray-dark;
 
 // Links
 // -------------------------
@@ -254,7 +254,7 @@ $grid-float-breakpoint:     $screen-sm-min;
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    100px;//50px;
+$navbar-height:                    $th-brand-logo-height + 8px;//50px
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             0;//$border-radius-base;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2);
@@ -609,7 +609,7 @@ $abbr-border-color:           $gray-light;
 $headings-small-color:        $gray-light;
 $blockquote-small-color:      $gray-light;
 $blockquote-border-color:     $gray-lighter;
-$page-header-border-color:    $gray-lighter;
+$page-header-border-color:    #000;//$gray-lighter;
 
 // Miscellaneous
 // -------------------------

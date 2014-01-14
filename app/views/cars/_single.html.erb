@@ -1,12 +1,14 @@
-<%# resource_cache(resource) do %> 
+<%# resource_cache(resource) do %>
+ 
 <article class="container single-product"> 
+  <div class="page-header">
+    <h1><%= resource.title %></h1>
+  </div>
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <%= render_slideshow_for(resource) %> 
     </div>
     <div class="col-xs-12 col-sm-6">
-      <%= page_title(resource.title) %>
-      <br/>
       <%= render_copy_text(resource.body) %>
       <br/> 
       <strong><%= raw "#{t('custom.specifications')}:" %></strong>

@@ -7,7 +7,7 @@ en:
     specifications: Specifications
     per_day: day
     per_week: week
-    season_one: "Low Season From april 15 to december 14"
-    season_two: "Middle Season From january 15 to april 14"
-    season_three: "High Season From december 15 to january 14"
+    season_one: "From april 15 to december 14"
+    season_two: "From january 15 to april 14"
+    season_three: "From december 15 to january 14"
     insurance: "Insurance deductible"
