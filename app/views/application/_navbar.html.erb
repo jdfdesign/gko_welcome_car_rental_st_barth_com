@@ -3,7 +3,7 @@
 ================================================== -->
 <div class="topbar hidden-print">
   <div class="container">
-    <p class="pull-left"><em><%= raw t("custom.promo") %></em></p>
+    <%= link_to(t("custom.promo"), reservations_path, :class => "pull-left") %>
     <%= render "locales_select" %>
   </div>
 </div>

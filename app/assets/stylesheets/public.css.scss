@@ -41,6 +41,7 @@ $th-brand-logo-height: 37px;
 
 .page-header {
   border-bottom: 6px solid $page-header-border-color;
+  padding-bottom: 0;
   h1 {
     text-transform: uppercase;
     display: inline-block;

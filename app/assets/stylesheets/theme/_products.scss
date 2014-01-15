@@ -29,40 +29,18 @@
     &:hover,
     &:focus {
       text-decoration: none;
+      
     }
   }
   .thumbnail-title {
     font-size: $font-size-base;
-  }
-  .wrap {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    border: 1px solid $thumbnail-border;
-    border-radius: $thumbnail-border-radius;
-    @include opacity(0);
-    @include transition(opacity 0.4s ease-in-out);
-  }
-  .icon-zoom-in {
-    @include opacity(0);
-    font-size: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -14px;
-    margin-left: -14px;
-    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px solid $gray-dark;
+    @include transition(all 0.3s ease-in-out);
   }
   &:hover {
-    .wrap {
-      @include opacity(.6);
-    }
-    .icon-zoom-in {
-      @include opacity(1);
+    .thumbnail-title {
+      border-bottom-color: $brand-primary;
     }
   }
 }
@@ -72,15 +50,23 @@
 // --------------------------------------------------
 .single-product {
   h4 {
-    margin-top: $line-height-computed;
-    border-bottom: 2px solid $brand-primary;
+    margin-top: $line-height-computed * 1.5;
+    padding-bottom: $line-height-computed / 6;
+    border-bottom: 3px solid $brand-primary;
     text-transform: uppercase;
-    color: $text-color;
+    color: $brand-primary;
+    font-size: $font-size-h4 - 2;
+    letter-spacing: 1px;
   }
   .table {
     width: 100%;
   }
   .carousel {
     margin-bottom: $line-height-computed;
+  }
+  .btn-reservation {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: $font-size-h4 - 2; // like h4
   } 
 }
