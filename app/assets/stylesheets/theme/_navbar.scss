@@ -18,20 +18,24 @@
 /* CUSTOMIZE THE LANGUAGE MENU
 -------------------------------------------------- */
 .topbar {
-  background-color: $gray-dark;
+  background-color: $theme-secondary-color;
   color: $brand-primary;
   padding-top: 12px;
   padding-bottom: 12px;
   a {
+    display: block;
+    text-align: center;
     padding: 0;
+    font-size: $font-size-small;
     &:hover,
     &:focus {
       text-decoration: none;
       color: #fff;
     }
-  }
-  @media (max-width: 767px) {
-    
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+      text-align: left;
+    }
   }
 }
 #locales-menu {
@@ -42,7 +46,7 @@
     color: $brand-primary;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 11px;
+    font-size: 10px;
     padding: 0 30px;
     background-color: transparent;
     @include transition(all 0.3s ease-in-out);

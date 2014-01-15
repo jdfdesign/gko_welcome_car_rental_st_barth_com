@@ -27,7 +27,7 @@ $brand-info:            #5bc0de;
 // Scaffolding
 // -------------------------
 
-$body-bg:               #fff;
+$body-bg:               #f1eee7;//#fff;
 $text-color:            $gray-dark;
 
 // Links
@@ -152,7 +152,7 @@ $input-bg-disabled:              $gray-lighter;
 $input-color:                    #1a1a1a;//$gray;
 $input-border:                   #ccc;
 $input-border-radius:            $border-radius-base;
-$input-border-focus:             #66afe9;
+$input-border-focus:             $theme-color;//#66afe9;
 
 $input-color-placeholder:        $gray-light;
 
@@ -609,7 +609,7 @@ $abbr-border-color:           $gray-light;
 $headings-small-color:        $gray-light;
 $blockquote-small-color:      $gray-light;
 $blockquote-border-color:     $gray-lighter;
-$page-header-border-color:    $gray-dark;//$gray-lighter;
+$page-header-border-color:    $theme-secondary-color;//$gray-lighter;
 
 // Miscellaneous
 // -------------------------
