@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140113150694) do
+ActiveRecord::Schema.define(:version => 20140129100000) do
 
   create_table "assets", :force => true do |t|
     t.integer  "site_id"
@@ -57,8 +57,8 @@ ActiveRecord::Schema.define(:version => 20140113150694) do
     t.integer  "season_two_price_per_week"
     t.integer  "season_three_price_per_day"
     t.integer  "season_three_price_per_week"
-    t.integer  "insurance_price_per_day"
-    t.integer  "insurance_price_per_week"
+    t.integer  "insurance"
+    t.integer  "deductible"
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
   end
@@ -106,6 +106,71 @@ ActiveRecord::Schema.define(:version => 20140113150694) do
   add_index "contents", ["section_id"], :name => "index_contents_on_section_id"
   add_index "contents", ["site_id"], :name => "index_contents_on_site_id"
   add_index "contents", ["slug"], :name => "index_contents_on_slug"
+
+  create_table "document_assignments", :force => true do |t|
+    t.integer  "position",                      :default => 1, :null => false
+    t.integer  "document_id",                                  :null => false
+    t.integer  "attachable_id",                                :null => false
+    t.string   "attachable_type", :limit => 40,                :null => false
+    t.datetime "created_at",                                   :null => false
+    t.datetime "updated_at",                                   :null => false
+  end
+
+  add_index "document_assignments", ["attachable_id", "attachable_type"], :name => "index_document_assignments_on_attachable_id_and_attachable_type"
+
+  create_table "document_items", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.date     "published_at"
+    t.integer  "site_id"
+    t.integer  "section_id"
+    t.string   "document_mime_type"
+    t.string   "document_name"
+    t.integer  "document_size"
+    t.string   "document_uid"
+    t.string   "document_ext"
+    t.string   "image_mime_type"
+    t.string   "image_name"
+    t.integer  "image_size"
+    t.integer  "image_width"
+    t.integer  "image_height"
+    t.string   "image_uid"
+    t.string   "image_ext"
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.string   "language",           :limit => 5
+    t.string   "country"
+  end
+
+  add_index "document_items", ["section_id"], :name => "index_press_articles_on_section_id"
+  add_index "document_items", ["site_id"], :name => "index_press_articles_on_site_id"
+
+  create_table "document_translations", :force => true do |t|
+    t.integer  "document_id"
+    t.string   "locale",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "title"
+    t.text     "alt"
+  end
+
+  add_index "document_translations", ["document_id"], :name => "index_document_translations_on_document_id"
+  add_index "document_translations", ["locale"], :name => "index_document_translations_on_locale"
+
+  create_table "documents", :force => true do |t|
+    t.string   "title",                      :limit => 100
+    t.string   "lang",                       :limit => 4
+    t.string   "alt"
+    t.integer  "site_id"
+    t.integer  "document_assignments_count",                :default => 0
+    t.datetime "created_at",                                               :null => false
+    t.datetime "updated_at",                                               :null => false
+    t.string   "document_mime_type"
+    t.string   "document_name"
+    t.integer  "document_size"
+    t.string   "document_uid"
+    t.string   "document_ext"
+  end
 
   create_table "image_assignments", :force => true do |t|
     t.integer  "position",                      :default => 1, :null => false

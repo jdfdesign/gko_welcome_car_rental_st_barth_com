@@ -20,7 +20,7 @@ fr:
     season_two: "Du 15 janvier au 14 avril"
     season_three: "DU 15 décembre au 14 janvier"
     insurance: "Assurance"
-    deductible: "Déductible"
+    deductible: "Franchise"
     
   simple_form:
     labels:

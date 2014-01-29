@@ -39,4 +39,5 @@ en:
     season_one: "From april 15 to december 14"
     season_two: "From january 15 to april 14"
     season_three: "From december 15 to january 14"
-    insurance: "Insurance deductible"
+    insurance: "Insurance"
+    deductible: "Déductible"

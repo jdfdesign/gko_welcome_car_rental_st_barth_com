@@ -7,7 +7,6 @@
     <div class="col-xs-12">
       <article>
         <%= render_slideshow_for(resource) %>
-        <%= render_copy_text(resource.body) %>
       </article>
     </div>
   </div>
@@ -19,8 +18,9 @@
             <th>&nbsp;</th>
             <th class="text-center" colspan="2"><%= raw "#{t('custom.season_one')}" %></th>
             <th class="text-center" colspan="2"><%= raw "#{t('custom.season_two')}" %></th>
-            <th class="text-center" colspan="2"><%= raw "#{t('custom.season_three')}" %></th>
-            <th class="text-center" colspan="2"><%= raw "#{t('custom.insurance')}" %></th>
+            <th class="text-center"><%= raw "#{t('custom.season_three')}" %></th>
+            <th class="text-center"><%= raw "#{t('custom.insurance')}" %></th>
+            <th class="text-center"><%= raw "#{t('custom.deductible')}" %></th>
           </tr>
           <tr>
             <th>&nbsp;</th>
@@ -29,25 +29,30 @@
             <th class="text-center"><%= raw "#{t('custom.per_day')}" %></th>
             <th class="text-center"><%= raw "#{t('custom.per_week')}" %></th>
             <th class="text-center"><%= raw "#{t('custom.per_day')}" %></th>
-            <th class="text-center"><%= raw "#{t('custom.per_week')}" %></th>
-            <th class="text-center"><%= raw "#{t('custom.per_day')}" %></th>
-            <th class="text-center"><%= raw "#{t('custom.per_week')}" %></th>
+            <th class="text-center">&nbsp;</th>
+            <th class="text-center">&nbsp;</th>
           </tr>
-          <% site.cars.with_globalize.each do |car| %>
+          <% site.cars.with_globalize.order("cars.season_one_price_per_week").each do |car| %>
             <tr>
-              <td><%= raw "#{car.title}" %></td>
+              <td><strong><%= link_to(car.title, car.public_url) %></strong></td>
               <td class="text-center"><%= raw "#{car.season_one_price_per_day}&nbsp;€" %></td>
               <td class="text-center"><%= raw "#{car.season_one_price_per_week}&nbsp;€" %></td>
               <td class="text-center"><%= raw "#{car.season_two_price_per_day}&nbsp;€" %></td>
               <td class="text-center"><%= raw "#{car.season_two_price_per_week}&nbsp;€" %></td>
               <td class="text-center"><%= raw "#{car.season_three_price_per_day}&nbsp;€" %></td>
-              <td class="text-center"><%= raw "#{car.season_three_price_per_week}&nbsp;€" %></td>
-              <td class="text-center" class="text-center"><%= raw "#{car.insurance_price_per_day}&nbsp;€" %></td>
-              <td class="text-center"><%= raw "#{car.insurance_price_per_week}&nbsp;€" %></td>
+              <td class="text-center" class="text-center"><%= raw "#{car.insurance}&nbsp;€" %></td>
+              <td class="text-center"><%= raw "#{car.deductible}&nbsp;€" %></td>
             </tr>
           <% end %>
         </table>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <article>
+        <%= render_copy_text(resource.body) %>
+      </article>
     </div>
   </div>
 </div>
