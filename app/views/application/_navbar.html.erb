@@ -3,7 +3,7 @@
 ================================================== -->
 <div class="topbar hidden-print">
   <div class="container">
-    <%= link_to(t("custom.promo"), "#footer", :class => "pull-left") %>
+    <%= link_to(t("custom.promo"), "#footer", :class => "pull-left hidden-xs") %>
     <%= render "locales_select" %>
   </div>
 </div>
@@ -22,6 +22,11 @@
       <%= render 'menu', :sections => site.primary_menu, :menu_name => 'navbar-nav navbar-right' %>
     </nav>
     
+  </div>
+  <div class="topbar visible-xs hidden-print">
+    <div class="container">
+      <%= link_to(t("custom.promo"), "#footer", :class => "text-center") %>
+    </div>
   </div>
 </header>
 <%# end %>

@@ -10270,11 +10270,11 @@ body {
   }
 }
 
-/* line 43, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 44, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav {
   float: right;
 }
-/* line 46, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 47, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav > li > a {
   color: #ff6600;
   text-transform: uppercase;
@@ -10286,7 +10286,7 @@ body {
   transition: all 0.3s ease-in-out;
   padding-right: 15px;
 }
-/* line 56, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 57, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav > li > a:hover, #locales-menu .nav > li > a:focus {
   background-color: transparent;
   color: #fff;
@@ -10428,6 +10428,39 @@ span.valid {
   color: #fff;
 }
 
+/* line 1, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail {
+  position: relative;
+  min-height: 210px;
+}
+/* line 6, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail a:hover, .thumbnail a:focus {
+  text-decoration: none;
+}
+/* line 10, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail a > img {
+  margin-left: 0;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 10, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+  .thumbnail a > img {
+    margin-left: auto;
+  }
+}
+/* line 21, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail .thumbnail-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #333333;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 28, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail:hover .thumbnail-title {
+  border-bottom-color: #ff6600;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* line 4, ../../app/assets/stylesheets/theme/_home.scss */
@@ -10503,60 +10536,7 @@ span.valid {
   margin-right: auto;
 }
 
-/* line 1, ../../app/assets/stylesheets/theme/_products.scss */
-.products-filter {
-  margin-bottom: 20px;
-}
-/* line 3, ../../app/assets/stylesheets/theme/_products.scss */
-.products-filter input {
-  width: 100%;
-}
-/* line 6, ../../app/assets/stylesheets/theme/_products.scss */
-.products-filter select {
-  color: white;
-  padding: 0 1em;
-  height: 2.4em;
-  outline: none;
-  background: url("/assets/arrow-down.png") no-repeat right 0.8em #cccccc;
-  -webkit-appearance: none;
-  width: 100%;
-  margin-bottom: 1em;
-}
-
-/* line 24, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail {
-  position: relative;
-  min-height: 210px;
-}
-/* line 31, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail a:hover, .thumbnail-item > .thumbnail a:focus {
-  text-decoration: none;
-}
-/* line 36, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail a > img {
-  margin-left: 0;
-  margin-right: auto;
-}
-@media (min-width: 768px) {
-  /* line 36, ../../app/assets/stylesheets/theme/_products.scss */
-  .thumbnail-item > .thumbnail a > img {
-    margin-left: auto;
-  }
-}
-/* line 47, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail .thumbnail-title {
-  font-size: 14px;
-  text-transform: uppercase;
-  border-bottom: 3px solid #333333;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-/* line 54, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail:hover .thumbnail-title {
-  border-bottom-color: #ff6600;
-}
-
-/* line 64, ../../app/assets/stylesheets/theme/_products.scss */
+/* line 5, ../../app/assets/stylesheets/theme/_products.scss */
 .single-product h4 {
   margin-top: 30px;
   padding-bottom: 3.33333px;
@@ -10566,15 +10546,15 @@ span.valid {
   font-size: 16px;
   letter-spacing: 1px;
 }
-/* line 73, ../../app/assets/stylesheets/theme/_products.scss */
+/* line 14, ../../app/assets/stylesheets/theme/_products.scss */
 .single-product .table, .single-product .copy-text table, .copy-text .single-product table {
   width: 100%;
 }
-/* line 76, ../../app/assets/stylesheets/theme/_products.scss */
+/* line 17, ../../app/assets/stylesheets/theme/_products.scss */
 .single-product .carousel {
   margin-bottom: 20px;
 }
-/* line 79, ../../app/assets/stylesheets/theme/_products.scss */
+/* line 20, ../../app/assets/stylesheets/theme/_products.scss */
 .single-product .btn-reservation {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -10603,14 +10583,14 @@ span.valid {
   width: device-width;
 }
 
-/* line 25, ../../app/assets/stylesheets/public.css.scss */
+/* line 26, ../../app/assets/stylesheets/public.css.scss */
 .placeholder {
   color: #999999;
 }
 
 /* FIX FOR GMAP BUG
 -------------------------------------------------- */
-/* line 31, ../../app/assets/stylesheets/public.css.scss */
+/* line 32, ../../app/assets/stylesheets/public.css.scss */
 #map-canvas {
   height: 350px;
   width: 100%;
@@ -10619,7 +10599,7 @@ span.valid {
   box-sizing: content-box;
   margin-bottom: 20px;
 }
-/* line 36, ../../app/assets/stylesheets/public.css.scss */
+/* line 37, ../../app/assets/stylesheets/public.css.scss */
 #map-canvas img {
   max-width: none;
   vertical-align: middle;
@@ -10627,7 +10607,32 @@ span.valid {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 44, ../../app/assets/stylesheets/public.css.scss */
+/* line 45, ../../app/assets/stylesheets/public.css.scss */
 .table-rates {
   font-size: 12px;
+}
+
+/* line 50, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail {
+  min-height: 100px;
+}
+/* line 52, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail .thumbnail-image {
+  float: left;
+}
+/* line 56, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail a > img {
+  margin-left: 0;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 56, ../../app/assets/stylesheets/public.css.scss */
+  #thumbnails-partner .thumbnail a > img {
+    margin-left: 0;
+  }
+}
+/* line 65, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail .caption {
+  float: left;
+  padding-left: 20px;
 }

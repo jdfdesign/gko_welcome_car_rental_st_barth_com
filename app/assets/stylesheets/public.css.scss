@@ -10,6 +10,7 @@ $th-brand-logo-height: 50px;
 @import "theme/footer";
 @import "theme/form";
 @import "theme/carousel";
+@import "theme/thumbnails";
 @import "theme/home";
 @import "theme/products";
 
@@ -43,4 +44,27 @@ $th-brand-logo-height: 50px;
 
 .table-rates {
   font-size: $font-size-small;
+}
+
+#thumbnails-partner {
+  .thumbnail {
+    min-height: 100px;
+    .thumbnail-image {
+      float: left;
+    }
+    a {
+      > img {
+        margin-left: 0;
+        margin-right: auto;
+      
+        @media (min-width: $grid-float-breakpoint) {
+          margin-left: 0;
+        }
+      }
+    }
+    .caption {
+      float: left;
+      padding-left: 20px;
+    }
+  }
 }

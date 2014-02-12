@@ -62,72 +62,6 @@ jQuery(function($){
       })
     };
 
-  /* ==================================================
-    	Navigation
-    ================================================== */
-    THEME.navigation = function() {
-      
-      var navbarHeight = $('.navbar').height();
-      $(window).bind('scroll', function () {
-        var scrollTop = jQuery(window).scrollTop();
-        scrollTop >= $(window).height() - navbarHeight ? $(".navbar").addClass("fixed") : $(".navbar").removeClass("fixed");
-      });
-      
-      $('.navbar-nav li').on("click", function(e) {
-        var target = $("#" + $(this).attr('id') + "_page"),
-            navbarHeight = $('.navbar').height();
-        console.log(target);
-        $(this).parent().find('li').removeClass('active');
-        $(this).addClass('active');
-
-        if ($(window).width() <= 767) {
-          $('html, body').stop().animate({
-            scrollTop: target.offset().top - navbarHeight
-          }, 1500, 'easeInOutExpo');
-        } else {
-          $('html, body').stop().animate({
-            scrollTop: target.offset().top - navbarHeight
-          }, 1500, 'easeInOutExpo');
-        }
-
-        e.preventDefault();
-      })
-      
-      
-    }
-  /* ==================================================
-    	Scroll to Top
-    ================================================== */
-
-    THEME.scrollToTop = function() {
-      var didScroll = false;
-
-      var $arrow = $('#back-to-top');
-
-      $arrow.click(function(e) {
-        $('body,html').animate({
-          scrollTop: "0"
-        }, 750, 'easeOutExpo');
-        e.preventDefault();
-      });
-
-      $(window).scroll(function() {
-        didScroll = true;
-      });
-
-      setInterval(function() {
-        if (didScroll) {
-          didScroll = false;
-
-          if ($(window).scrollTop() > 1000) {
-            $arrow.css('display', 'block');
-          } else {
-            $arrow.css('display', 'none');
-          }
-        }
-      }, 250);
-    };
-    
     /* ==================================================
       	Gmap
       ================================================== */
@@ -174,20 +108,6 @@ jQuery(function($){
           map: map
         });
 
-        /*var content_1 = '<div id="content">'+
-              '<div id="siteNotice">'+
-              '</div>'+
-              '<h1 id="firstHeading" class="firstHeading">Buy your Ticket here</h1>'+
-              '<div id="bodyContent">'+
-              '<p>Buy your parking ticket for OSCARPARK in the shop TOM SHOP.<br/>Opened from 9am to 7pm</p>'+
-              '</div>'+
-              '</div>';
-    
-    
-        var infowindow_1 = new google.maps.InfoWindow({
-          content: content_1
-        });*/
-
         google.maps.event.addListener(marker_1, 'click', function() {
           infowindow_1.open(map,marker_1);
         });
@@ -198,10 +118,6 @@ jQuery(function($){
 
   $(document).ready(function() {
     THEME.fix();
-    //THEME.anim(); 
-    //THEME.textCenter();
-    //THEME.navigation();
-    //THEME.scrollToTop();
     THEME.placeholder();
     THEME.carousel();
     if(typeof(google) != 'undefined'){
