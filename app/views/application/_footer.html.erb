@@ -3,11 +3,11 @@
 <section id="footer" class="section contact-section">
   <div class="container">
     <div class="page-header">
-      <h1><%= @contact_page.title %></h1>
+      <h1><%= @contact_page.title if @contact_page %></h1>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-4"> 
-        <%= render_copy_text(@contact_page.body) %>
+        <%= render_copy_text(@contact_page.body) if @contact_page %>
       </div>
       <div class="col-xs-12 col-sm-8">
         <form id="contact-form" action="/inquiries" method="post" data-remote="true">

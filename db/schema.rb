@@ -150,8 +150,8 @@ ActiveRecord::Schema.define(:version => 20140129100000) do
     t.string   "locale",      :null => false
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.string   "title"
     t.text     "alt"
+    t.string   "title"
   end
 
   add_index "document_translations", ["document_id"], :name => "index_document_translations_on_document_id"

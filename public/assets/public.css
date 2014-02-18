@@ -4901,7 +4901,7 @@ input[type="button"].btn-block {
 /* line 11, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar {
   position: relative;
-  min-height: 80px;
+  min-height: 88px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -5044,7 +5044,7 @@ input[type="button"].btn-block {
 /* line 150, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 30px 15px;
+  padding: 34px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -5065,8 +5065,8 @@ input[type="button"].btn-block {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 27px;
+  margin-bottom: 27px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -5092,7 +5092,7 @@ input[type="button"].btn-block {
 
 /* line 207, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-nav {
-  margin: 15px -15px;
+  margin: 17px -15px;
 }
 /* line 210, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-nav > li > a {
@@ -5137,8 +5137,8 @@ input[type="button"].btn-block {
   }
   /* line 247, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
   /* line 253, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-nav.navbar-right:last-child {
@@ -5166,8 +5166,8 @@ input[type="button"].btn-block {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 @media (max-width: 767px) {
   /* line 293, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
@@ -5215,24 +5215,24 @@ input[type="button"].btn-block {
 
 /* line 344, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-btn {
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 /* line 347, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-btn.btn-sm {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 29px;
+  margin-bottom: 29px;
 }
 /* line 350, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-btn.btn-xs {
-  margin-top: 29px;
-  margin-bottom: 29px;
+  margin-top: 33px;
+  margin-bottom: 33px;
 }
 
 /* line 360, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-text {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 34px;
+  margin-bottom: 34px;
 }
 @media (min-width: 768px) {
   /* line 360, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
@@ -10162,8 +10162,9 @@ body {
 .page-header h1 {
   text-transform: uppercase;
   display: inline-block;
+  margin-bottom: 0;
 }
-/* line 17, ../../app/assets/stylesheets/theme/_type.scss */
+/* line 18, ../../app/assets/stylesheets/theme/_type.scss */
 .page-header a {
   position: absolute;
   right: 0;
@@ -10212,12 +10213,12 @@ body {
   background-color: #fff;
 }
 
-/* line 27, ../../app/assets/stylesheets/theme/_type.scss */
+/* line 28, ../../app/assets/stylesheets/theme/_type.scss */
 .copy-text ul {
   list-style: disc outside;
   margin-left: 30px;
 }
-/* line 31, ../../app/assets/stylesheets/theme/_type.scss */
+/* line 32, ../../app/assets/stylesheets/theme/_type.scss */
 .copy-text ol {
   margin-left: 30px;
 }
