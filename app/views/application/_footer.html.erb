@@ -1,4 +1,4 @@
-<%# cache([site, I18n.locale, 'footer']) do %>
+<% cache([site, I18n.locale, 'footer']) do %>
 <% @contact_page = site.sections.named("contact") %> 
 <section id="footer" class="section contact-section">
   <div class="container">
@@ -54,4 +54,4 @@
   </div>
 </section>
 <!-- END COPYRIGHT -->
-<%# end %>
+<% end %>
