@@ -8,6 +8,20 @@ fr:
     read_more: "Voir le détail"
     no_record_found: "Aucun produit n'a été trouvé"
 
+  custom:
+    reserve: Réserver
+    back_to_fleet: Retour à la flotte
+    promo: 15% de réduction sur chaque réservation faîte par notre site Internet
+    rates: Tarifs
+    specifications: Spécifications
+    per_day: jour
+    per_week: semaine
+    season_one: "Du 15 avril au 14 décembre"
+    season_two: "Du 15 janvier au 14 avril"
+    season_three: "DU 15 décembre au 14 janvier"
+    insurance: "Assurance"
+    deductible: "Franchise"
+    
   simple_form:
     labels:
       reservation:

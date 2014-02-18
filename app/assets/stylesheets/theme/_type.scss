@@ -1,0 +1,37 @@
+body {
+  font-size: $font-size-base;
+  @media (min-width: $screen-sm-min) {
+    font-size: (ceil($font-size-base * 1.1)); // ~16px);
+  }
+}
+
+
+.page-header {
+  position: relative;
+  border-width: 6px;
+  padding-bottom: 0;
+  h1 {
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include button-variant(".btn-alternate", #fff, $theme-secondary-color, darken($theme-secondary-color, 5%));
+  }
+}
+
+
+.copy-text {
+  ul { 
+    list-style: disc outside; 
+    margin-left: 30px; 
+  }
+  ol { 
+    margin-left: 30px; 
+  }
+	table {
+    @extend .table;
+  }
+}

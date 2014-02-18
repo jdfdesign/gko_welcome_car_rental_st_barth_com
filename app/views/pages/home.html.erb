@@ -2,19 +2,22 @@
 <div class="container"> 
   <div class="row">
     <div class="col-xs-12">
+      <div class="page-header">
+        <h1><%= site.car_lists.first.title %></h1>
+      </div>
+      <div id="thumbnails-product" class="thumbnails">
+          <%= render site.cars.with_globalize.order("cars.season_one_price_per_week") %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
       <article>
         <%= render_slideshow_for(resource) %>
         <%= render_page_title(resource.title) %>
         <%= render_copy_text(resource.body) %>
       </article>
     </div> 
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <div id="product-list-wrapper">
-          <%= render site.cars.with_globalize %>
-      </div>
-    </div>
   </div>
 </div>
 <%# end %>

@@ -328,8 +328,9 @@ table {
   }
 
   /* line 81, ../../app/assets/stylesheets/bootstrap.3.0.3/_print.scss */
-  .table td,
-  .table th {
+  .table td, .copy-text table td,
+  .table th,
+  .copy-text table th {
     background-color: #fff !important;
   }
 
@@ -345,7 +346,7 @@ table {
   }
 
   /* line 95, ../../app/assets/stylesheets/bootstrap.3.0.3/_print.scss */
-  .table {
+  .table, .copy-text table {
     border-collapse: collapse !important;
   }
 
@@ -376,7 +377,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: white;
+  background-color: #f1eee7;
 }
 
 /* line 34, ../../app/assets/stylesheets/bootstrap.3.0.3/_scaffolding.scss */
@@ -427,9 +428,9 @@ img {
 .img-thumbnail {
   padding: 0;
   line-height: 1.42857;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 4px;
+  background-color: #f1eee7;
+  border: 1px solid #f1eee7;
+  border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
@@ -653,7 +654,7 @@ cite {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #203a42;
 }
 
 /* line 140, ../../app/assets/stylesheets/bootstrap.3.0.3/_type.scss */
@@ -832,7 +833,7 @@ code {
   color: #c7254e;
   background-color: #f9f2f4;
   white-space: nowrap;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 25, ../../app/assets/stylesheets/bootstrap.3.0.3/_code.scss */
@@ -847,7 +848,7 @@ pre {
   color: #333333;
   background-color: whitesmoke;
   border: 1px solid #cccccc;
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 39, ../../app/assets/stylesheets/bootstrap.3.0.3/_code.scss */
 pre code {
@@ -1978,43 +1979,53 @@ th {
 }
 
 /* line 17, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table {
+.table, .copy-text table {
   width: 100%;
   margin-bottom: 20px;
 }
 /* line 26, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table > thead > tr > th,
+.table > thead > tr > th, .copy-text table > thead > tr > th,
 .table > thead > tr > td,
+.copy-text table > thead > tr > td,
 .table > tbody > tr > th,
+.copy-text table > tbody > tr > th,
 .table > tbody > tr > td,
+.copy-text table > tbody > tr > td,
 .table > tfoot > tr > th,
-.table > tfoot > tr > td {
+.copy-text table > tfoot > tr > th,
+.table > tfoot > tr > td,
+.copy-text table > tfoot > tr > td {
   padding: 8px;
   line-height: 1.42857;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
 /* line 35, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table > thead > tr > th {
+.table > thead > tr > th, .copy-text table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #dddddd;
 }
 /* line 45, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table > caption + thead > tr:first-child > th,
+.table > caption + thead > tr:first-child > th, .copy-text table > caption + thead > tr:first-child > th,
 .table > caption + thead > tr:first-child > td,
+.copy-text table > caption + thead > tr:first-child > td,
 .table > colgroup + thead > tr:first-child > th,
+.copy-text table > colgroup + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > td,
+.copy-text table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > th,
-.table > thead:first-child > tr:first-child > td {
+.copy-text table > thead:first-child > tr:first-child > th,
+.table > thead:first-child > tr:first-child > td,
+.copy-text table > thead:first-child > tr:first-child > td {
   border-top: 0;
 }
 /* line 51, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table > tbody + tbody {
+.table > tbody + tbody, .copy-text table > tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 /* line 56, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table .table {
-  background-color: white;
+.table .table, .copy-text table .table, .table .copy-text table, .copy-text .table table, .copy-text table table {
+  background-color: #f1eee7;
 }
 
 /* line 70, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
@@ -2073,15 +2084,23 @@ table th[class*="col-"] {
 }
 
 /* line 420, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
-.table > thead > tr > .active,
+.table > thead > tr > .active, .copy-text table > thead > tr > .active,
 .table > thead > .active > td,
+.copy-text table > thead > .active > td,
 .table > thead > .active > th,
+.copy-text table > thead > .active > th,
 .table > tbody > tr > .active,
+.copy-text table > tbody > tr > .active,
 .table > tbody > .active > td,
+.copy-text table > tbody > .active > td,
 .table > tbody > .active > th,
+.copy-text table > tbody > .active > th,
 .table > tfoot > tr > .active,
+.copy-text table > tfoot > tr > .active,
 .table > tfoot > .active > td,
-.table > tfoot > .active > th {
+.copy-text table > tfoot > .active > td,
+.table > tfoot > .active > th,
+.copy-text table > tfoot > .active > th {
   background-color: whitesmoke;
 }
 
@@ -2093,15 +2112,23 @@ table th[class*="col-"] {
 }
 
 /* line 420, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
-.table > thead > tr > .success,
+.table > thead > tr > .success, .copy-text table > thead > tr > .success,
 .table > thead > .success > td,
+.copy-text table > thead > .success > td,
 .table > thead > .success > th,
+.copy-text table > thead > .success > th,
 .table > tbody > tr > .success,
+.copy-text table > tbody > tr > .success,
 .table > tbody > .success > td,
+.copy-text table > tbody > .success > td,
 .table > tbody > .success > th,
+.copy-text table > tbody > .success > th,
 .table > tfoot > tr > .success,
+.copy-text table > tfoot > tr > .success,
 .table > tfoot > .success > td,
-.table > tfoot > .success > th {
+.copy-text table > tfoot > .success > td,
+.table > tfoot > .success > th,
+.copy-text table > tfoot > .success > th {
   background-color: #dff0d8;
 }
 
@@ -2113,15 +2140,23 @@ table th[class*="col-"] {
 }
 
 /* line 420, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
-.table > thead > tr > .danger,
+.table > thead > tr > .danger, .copy-text table > thead > tr > .danger,
 .table > thead > .danger > td,
+.copy-text table > thead > .danger > td,
 .table > thead > .danger > th,
+.copy-text table > thead > .danger > th,
 .table > tbody > tr > .danger,
+.copy-text table > tbody > tr > .danger,
 .table > tbody > .danger > td,
+.copy-text table > tbody > .danger > td,
 .table > tbody > .danger > th,
+.copy-text table > tbody > .danger > th,
 .table > tfoot > tr > .danger,
+.copy-text table > tfoot > tr > .danger,
 .table > tfoot > .danger > td,
-.table > tfoot > .danger > th {
+.copy-text table > tfoot > .danger > td,
+.table > tfoot > .danger > th,
+.copy-text table > tfoot > .danger > th {
   background-color: #f2dede;
 }
 
@@ -2133,15 +2168,23 @@ table th[class*="col-"] {
 }
 
 /* line 420, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
-.table > thead > tr > .warning,
+.table > thead > tr > .warning, .copy-text table > thead > tr > .warning,
 .table > thead > .warning > td,
+.copy-text table > thead > .warning > td,
 .table > thead > .warning > th,
+.copy-text table > thead > .warning > th,
 .table > tbody > tr > .warning,
+.copy-text table > tbody > tr > .warning,
 .table > tbody > .warning > td,
+.copy-text table > tbody > .warning > td,
 .table > tbody > .warning > th,
+.copy-text table > tbody > .warning > th,
 .table > tfoot > tr > .warning,
+.copy-text table > tfoot > tr > .warning,
 .table > tfoot > .warning > td,
-.table > tfoot > .warning > th {
+.copy-text table > tfoot > .warning > td,
+.table > tfoot > .warning > th,
+.copy-text table > tfoot > .warning > th {
   background-color: #fcf8e3;
 }
 
@@ -2164,16 +2207,21 @@ table th[class*="col-"] {
     -webkit-overflow-scrolling: touch;
   }
   /* line 180, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-  .table-responsive > .table {
+  .table-responsive > .table, .copy-text .table-responsive > table {
     margin-bottom: 0;
   }
   /* line 189, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > thead > tr > th, .copy-text .table-responsive > table > thead > tr > th,
   .table-responsive > .table > thead > tr > td,
+  .copy-text .table-responsive > table > thead > tr > td,
   .table-responsive > .table > tbody > tr > th,
+  .copy-text .table-responsive > table > tbody > tr > th,
   .table-responsive > .table > tbody > tr > td,
+  .copy-text .table-responsive > table > tbody > tr > td,
   .table-responsive > .table > tfoot > tr > th,
-  .table-responsive > .table > tfoot > tr > td {
+  .copy-text .table-responsive > table > tfoot > tr > th,
+  .table-responsive > .table > tfoot > tr > td,
+  .copy-text .table-responsive > table > tfoot > tr > td {
     white-space: nowrap;
   }
   /* line 197, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
@@ -2304,7 +2352,7 @@ output {
   background-color: white;
   background-image: none;
   border: 1px solid #cccccc;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -2312,10 +2360,10 @@ output {
 }
 /* line 813, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #ff6600;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 102, 0, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 102, 0, 0.6);
 }
 /* line 57, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
 .form-control:-moz-placeholder {
@@ -2653,7 +2701,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2738,8 +2786,8 @@ fieldset[disabled] .btn-default.active {
 /* line 442, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
 .btn-primary {
   color: white;
-  background-color: #ff6600;
-  border-color: #e65c00;
+  background-color: #203a42;
+  border-color: #182b31;
 }
 
 /* line 452, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
@@ -2749,8 +2797,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #d65600;
-  border-color: #a84300;
+  background-color: #132227;
+  border-color: #040708;
 }
 
 /* line 459, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
@@ -2772,13 +2820,13 @@ fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #ff6600;
-  border-color: #e65c00;
+  background-color: #203a42;
+  border-color: #182b31;
 }
 
 /* line 475, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
 .badge {
-  color: #ff6600;
+  color: #203a42;
   background-color: #fff;
 }
 
@@ -4134,7 +4182,7 @@ input[type="button"].btn-block {
   background-color: white;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
@@ -4454,13 +4502,13 @@ input[type="button"].btn-block {
 }
 /* line 179, ../../app/assets/stylesheets/bootstrap.3.0.3/_button-groups.scss */
 .btn-group-vertical > .btn:first-child:not(:last-child) {
-  border-top-right-radius: 4px;
+  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 /* line 183, ../../app/assets/stylesheets/bootstrap.3.0.3/_button-groups.scss */
 .btn-group-vertical > .btn:last-child:not(:first-child) {
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4557,7 +4605,7 @@ input[type="button"].btn-block {
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #cccccc;
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 71, ../../app/assets/stylesheets/bootstrap.3.0.3/_input-groups.scss */
 .input-group-addon.input-sm,
@@ -4707,7 +4755,7 @@ input[type="button"].btn-block {
   margin-right: 2px;
   line-height: 1.42857;
   border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  border-radius: 0 0 0 0;
 }
 /* line 146, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
 .nav-tabs > li > a:hover {
@@ -4716,7 +4764,7 @@ input[type="button"].btn-block {
 /* line 155, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: white;
+  background-color: #f1eee7;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4754,7 +4802,7 @@ input[type="button"].btn-block {
 /* line 103, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
 .nav-tabs.nav-justified > li > a {
   margin-right: 0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 111, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
 .nav-tabs.nav-justified > .active > a,
@@ -4766,13 +4814,13 @@ input[type="button"].btn-block {
   /* line 116, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
-    border-radius: 4px 4px 0 0;
+    border-radius: 0 0 0 0;
   }
   /* line 122, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: white;
+    border-bottom-color: #f1eee7;
   }
 }
 
@@ -4782,7 +4830,7 @@ input[type="button"].btn-block {
 }
 /* line 179, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
 .nav-pills > li > a {
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 182, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
 .nav-pills > li + li {
@@ -4853,7 +4901,7 @@ input[type="button"].btn-block {
 /* line 11, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar {
   position: relative;
-  min-height: 57px;
+  min-height: 80px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4996,7 +5044,7 @@ input[type="button"].btn-block {
 /* line 150, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 18.5px 15px;
+  padding: 30px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -5017,12 +5065,12 @@ input[type="button"].btn-block {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 11.5px;
-  margin-bottom: 11.5px;
+  margin-top: 23px;
+  margin-bottom: 23px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 186, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-toggle .icon-bar {
@@ -5044,7 +5092,7 @@ input[type="button"].btn-block {
 
 /* line 207, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-nav {
-  margin: 9.25px -15px;
+  margin: 15px -15px;
 }
 /* line 210, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-nav > li > a {
@@ -5089,8 +5137,8 @@ input[type="button"].btn-block {
   }
   /* line 247, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 18.5px;
-    padding-bottom: 18.5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   /* line 253, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-nav.navbar-right:last-child {
@@ -5118,8 +5166,8 @@ input[type="button"].btn-block {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 11.5px;
-  margin-bottom: 11.5px;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 @media (max-width: 767px) {
   /* line 293, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
@@ -5167,24 +5215,24 @@ input[type="button"].btn-block {
 
 /* line 344, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-btn {
-  margin-top: 11.5px;
-  margin-bottom: 11.5px;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 /* line 347, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-btn.btn-sm {
-  margin-top: 13.5px;
-  margin-bottom: 13.5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 /* line 350, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-btn.btn-xs {
-  margin-top: 17.5px;
-  margin-bottom: 17.5px;
+  margin-top: 29px;
+  margin-bottom: 29px;
 }
 
 /* line 360, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-text {
-  margin-top: 18.5px;
-  margin-bottom: 18.5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   /* line 360, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
@@ -5206,11 +5254,11 @@ input[type="button"].btn-block {
 }
 /* line 383, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: white;
+  color: black;
 }
 /* line 386, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #e6e6e6;
+  color: black;
   background-color: transparent;
 }
 /* line 392, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
@@ -5219,7 +5267,7 @@ input[type="button"].btn-block {
 }
 /* line 397, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: black;
 }
 /* line 401, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -5261,7 +5309,7 @@ input[type="button"].btn-block {
 @media (max-width: 767px) {
   /* line 455, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: white;
+    color: black;
   }
   /* line 458, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5281,7 +5329,7 @@ input[type="button"].btn-block {
 }
 /* line 488, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-link {
-  color: white;
+  color: black;
 }
 /* line 490, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-link:hover {
@@ -5391,7 +5439,7 @@ input[type="button"].btn-block {
   margin-bottom: 20px;
   list-style: none;
   background-color: whitesmoke;
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 12, ../../app/assets/stylesheets/bootstrap.3.0.3/_breadcrumbs.scss */
 .breadcrumb > li {
@@ -5413,7 +5461,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-left: 0;
   margin: 20px 0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 10, ../../app/assets/stylesheets/bootstrap.3.0.3/_pagination.scss */
 .pagination > li {
@@ -5435,14 +5483,14 @@ input[type="button"].btn-block {
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
   margin-left: 0;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 /* line 32, ../../app/assets/stylesheets/bootstrap.3.0.3/_pagination.scss */
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 /* line 41, ../../app/assets/stylesheets/bootstrap.3.0.3/_pagination.scss */
 .pagination > li > a:hover, .pagination > li > a:focus,
@@ -5748,9 +5796,9 @@ a.list-group-item.active > .badge,
   padding: 0;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 4px;
+  background-color: #f1eee7;
+  border: 1px solid #f1eee7;
+  border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -5781,7 +5829,7 @@ a.thumbnail.active {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 16, ../../app/assets/stylesheets/bootstrap.3.0.3/_alerts.scss */
 .alert h4 {
@@ -5904,7 +5952,7 @@ a.thumbnail.active {
   height: 20px;
   margin-bottom: 20px;
   background-color: whitesmoke;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -6038,14 +6086,14 @@ a.thumbnail.active {
 }
 /* line 27, ../../app/assets/stylesheets/bootstrap.3.0.3/_list-group.scss */
 .list-group-item:first-child {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 /* line 30, ../../app/assets/stylesheets/bootstrap.3.0.3/_list-group.scss */
 .list-group-item:last-child {
   margin-bottom: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 /* line 36, ../../app/assets/stylesheets/bootstrap.3.0.3/_list-group.scss */
 .list-group-item > .badge {
@@ -6116,7 +6164,7 @@ a.list-group-item:hover, a.list-group-item:focus {
   margin-bottom: 20px;
   background-color: white;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -6159,18 +6207,20 @@ a.list-group-item:hover, a.list-group-item:focus {
 }
 
 /* line 60, ../../app/assets/stylesheets/bootstrap.3.0.3/_panels.scss */
-.panel > .table,
-.panel > .table-responsive > .table {
+.panel > .table, .copy-text .panel > table,
+.panel > .table-responsive > .table,
+.copy-text .panel > .table-responsive > table {
   margin-bottom: 0;
 }
 /* line 64, ../../app/assets/stylesheets/bootstrap.3.0.3/_panels.scss */
-.panel > .panel-body + .table,
+.panel > .panel-body + .table, .copy-text .panel > .panel-body + table,
 .panel > .panel-body + .table-responsive {
   border-top: 1px solid #dddddd;
 }
 /* line 68, ../../app/assets/stylesheets/bootstrap.3.0.3/_panels.scss */
-.panel > .table > tbody:first-child th,
-.panel > .table > tbody:first-child td {
+.panel > .table > tbody:first-child th, .copy-text .panel > table > tbody:first-child th,
+.panel > .table > tbody:first-child td,
+.copy-text .panel > table > tbody:first-child td {
   border-top: 0;
 }
 /* line 72, ../../app/assets/stylesheets/bootstrap.3.0.3/_panels.scss */
@@ -6232,8 +6282,8 @@ a.list-group-item:hover, a.list-group-item:focus {
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: -1;
+  border-top-left-radius: -1;
 }
 /* line 107, ../../app/assets/stylesheets/bootstrap.3.0.3/_panels.scss */
 .panel-heading > .dropdown .dropdown-toggle {
@@ -6257,14 +6307,14 @@ a.list-group-item:hover, a.list-group-item:focus {
   padding: 10px 15px;
   background-color: whitesmoke;
   border-top: 1px solid #dddddd;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: -1;
+  border-bottom-left-radius: -1;
 }
 
 /* line 140, ../../app/assets/stylesheets/bootstrap.3.0.3/_panels.scss */
 .panel-group .panel {
   margin-bottom: 0;
-  border-radius: 4px;
+  border-radius: 0;
   overflow: hidden;
 }
 /* line 144, ../../app/assets/stylesheets/bootstrap.3.0.3/_panels.scss */
@@ -6409,7 +6459,7 @@ a.list-group-item:hover, a.list-group-item:focus {
   margin-bottom: 20px;
   background-color: whitesmoke;
   border: 1px solid #e3e3e3;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -6539,7 +6589,7 @@ button.close {
 /* line 72, ../../app/assets/stylesheets/bootstrap.3.0.3/_modals.scss */
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #333333;
   min-height: 16.42857px;
 }
 
@@ -6565,7 +6615,7 @@ button.close {
   margin-top: 15px;
   padding: 19px 20px 20px;
   text-align: right;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #333333;
 }
 /* line 21, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
 .modal-footer:before, .modal-footer:after {
@@ -6648,7 +6698,7 @@ button.close {
   text-align: center;
   text-decoration: none;
   background-color: black;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 35, ../../app/assets/stylesheets/bootstrap.3.0.3/_tooltip.scss */
@@ -10091,6 +10141,87 @@ a .icon-flip-vertical:before {
   content: "\f18b";
 }
 
+/* line 1, ../../app/assets/stylesheets/theme/_type.scss */
+body {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  /* line 1, ../../app/assets/stylesheets/theme/_type.scss */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* line 9, ../../app/assets/stylesheets/theme/_type.scss */
+.page-header {
+  position: relative;
+  border-width: 6px;
+  padding-bottom: 0;
+}
+/* line 13, ../../app/assets/stylesheets/theme/_type.scss */
+.page-header h1 {
+  text-transform: uppercase;
+  display: inline-block;
+}
+/* line 17, ../../app/assets/stylesheets/theme/_type.scss */
+.page-header a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* line 442, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
+.page-header a .btn-alternate {
+  color: white;
+  background-color: #203a42;
+  border-color: #182b31;
+}
+/* line 452, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
+.page-header a .btn-alternate:hover,
+.page-header a .btn-alternate:focus,
+.page-header a .btn-alternate:active,
+.page-header a .btn-alternate.active,
+.page-header a .open .dropdown-toggle.btn-alternate {
+  color: white;
+  background-color: #132227;
+  border-color: #040708;
+}
+/* line 459, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
+.page-header a .btn-alternate:active,
+.page-header a .btn-alternate.active,
+.page-header a .open .dropdown-toggle.btn-alternate {
+  background-image: none;
+}
+/* line 469, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
+.page-header a .btn-alternate.disabled, .page-header a .btn-alternate.disabled:hover, .page-header a .btn-alternate.disabled:focus, .page-header a .btn-alternate.disabled:active, .page-header a .btn-alternate.disabled.active,
+.page-header a .btn-alternate[disabled],
+.page-header a .btn-alternate[disabled]:hover,
+.page-header a .btn-alternate[disabled]:focus,
+.page-header a .btn-alternate[disabled]:active,
+.page-header a .btn-alternate[disabled].active,
+.page-header a fieldset[disabled] .btn-alternate,
+.page-header a fieldset[disabled] .btn-alternate:hover,
+.page-header a fieldset[disabled] .btn-alternate:focus,
+.page-header a fieldset[disabled] .btn-alternate:active,
+.page-header a fieldset[disabled] .btn-alternate.active {
+  background-color: #203a42;
+  border-color: #182b31;
+}
+/* line 475, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
+.page-header a .badge {
+  color: #203a42;
+  background-color: #fff;
+}
+
+/* line 27, ../../app/assets/stylesheets/theme/_type.scss */
+.copy-text ul {
+  list-style: disc outside;
+  margin-left: 30px;
+}
+/* line 31, ../../app/assets/stylesheets/theme/_type.scss */
+.copy-text ol {
+  margin-left: 30px;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 /* line 4, ../../app/assets/stylesheets/theme/_navbar.scss */
@@ -10102,123 +10233,117 @@ a .icon-flip-vertical:before {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 10, ../../app/assets/stylesheets/theme/_navbar.scss */
-.navbar .nav > li > a:hover {
-  color: #000;
-}
 
-/* line 16, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 13, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-brand {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-/* line 21, ../../app/assets/stylesheets/theme/_navbar.scss */
-.navbar:before, .navbar:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-
-/* line 41, ../../app/assets/stylesheets/theme/_navbar.scss */
-.navbar:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 0;
 }
 
 /* CUSTOMIZE THE LANGUAGE MENU
 -------------------------------------------------- */
-/* line 53, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 21, ../../app/assets/stylesheets/theme/_navbar.scss */
 .topbar {
-  background-color: #000;
+  background-color: #203a42;
+  color: #ff6600;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* line 26, ../../app/assets/stylesheets/theme/_navbar.scss */
+.topbar a {
+  display: block;
+  text-align: center;
+  padding: 0;
+  font-size: 12px;
+}
+/* line 32, ../../app/assets/stylesheets/theme/_navbar.scss */
+.topbar a:hover, .topbar a:focus {
+  text-decoration: none;
   color: #fff;
 }
-/* line 56, ../../app/assets/stylesheets/theme/_navbar.scss */
-.topbar p {
-  margin-top: 15px;
-  margin-bottom: 15px;
+@media (min-width: 768px) {
+  /* line 26, ../../app/assets/stylesheets/theme/_navbar.scss */
+  .topbar a {
+    display: inline-block;
+    text-align: left;
+  }
 }
 
-/* line 62, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 44, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav {
   float: right;
 }
-/* line 65, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 47, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav > li > a {
-  color: #fff;
+  color: #ff6600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 11px;
-  padding: 15px 30px;
+  font-size: 10px;
+  padding: 0 30px;
   background-color: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  padding-right: 15px;
 }
-/* line 74, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 57, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav > li > a:hover, #locales-menu .nav > li > a:focus {
   background-color: transparent;
-  color: #ff6600;
+  color: #fff;
+}
+
+/* line 1, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer {
+  background-color: #ff6600;
+  color: #fff;
+  margin-top: 40px;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+/* line 7, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer h1 {
+  color: #fff;
 }
 
 /* COPYRIGHT
 -------------------------------------------------- */
-/* line 3, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer {
-  background-color: #333333;
+/* line 13, ../../app/assets/stylesheets/theme/_footer.scss */
+#copyright {
+  background-color: #203a42;
   color: #999999;
-  margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 9, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer p {
+/* line 18, ../../app/assets/stylesheets/theme/_footer.scss */
+#copyright p {
   color: #989898;
   font-size: 11px;
   margin-bottom: 0;
 }
-/* line 15, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .nav > li {
+/* line 24, ../../app/assets/stylesheets/theme/_footer.scss */
+#copyright .nav > li {
   float: left;
   margin-right: 15px;
 }
-/* line 19, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .nav > li > a {
+/* line 28, ../../app/assets/stylesheets/theme/_footer.scss */
+#copyright .nav > li > a {
   color: #989898;
   font-size: 11px;
   padding: 0;
 }
-/* line 23, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .nav > li > a:hover {
+/* line 32, ../../app/assets/stylesheets/theme/_footer.scss */
+#copyright .nav > li > a:hover {
   color: #ff6600;
   background-color: transparent;
 }
 
-/* line 32, ../../app/assets/stylesheets/theme/_footer.scss */
+/* line 41, ../../app/assets/stylesheets/theme/_footer.scss */
 .copyright-author {
   background: transparent url(/assets/gko/logo_gecko_white-e303045746ef1861407e76f725f88d87.png) center left no-repeat;
   padding-left: 28px;
   color: #fff;
 }
-/* line 36, ../../app/assets/stylesheets/theme/_footer.scss */
+/* line 45, ../../app/assets/stylesheets/theme/_footer.scss */
 .copyright-author:hover {
   color: #fff;
 }
@@ -10303,6 +10428,39 @@ span.valid {
   color: #fff;
 }
 
+/* line 1, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail {
+  position: relative;
+  min-height: 210px;
+}
+/* line 6, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail a:hover, .thumbnail a:focus {
+  text-decoration: none;
+}
+/* line 10, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail a > img {
+  margin-left: 0;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 10, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+  .thumbnail a > img {
+    margin-left: auto;
+  }
+}
+/* line 21, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail .thumbnail-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #333333;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 28, ../../app/assets/stylesheets/theme/_thumbnails.scss */
+.thumbnail:hover .thumbnail-title {
+  border-bottom-color: #ff6600;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* line 4, ../../app/assets/stylesheets/theme/_home.scss */
@@ -10378,92 +10536,29 @@ span.valid {
   margin-right: auto;
 }
 
-/* line 1, ../../app/assets/stylesheets/theme/_products.scss */
-.products-filter {
-  margin-bottom: 20px;
-}
-/* line 3, ../../app/assets/stylesheets/theme/_products.scss */
-.products-filter input {
-  width: 100%;
-}
-/* line 6, ../../app/assets/stylesheets/theme/_products.scss */
-.products-filter select {
-  color: white;
-  padding: 0 1em;
-  height: 2.4em;
-  outline: none;
-  background: url("/assets/arrow-down.png") no-repeat right 0.8em #cccccc;
-  -webkit-appearance: none;
-  width: 100%;
-  margin-bottom: 1em;
-}
-
-/* line 24, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail {
-  position: relative;
-  min-height: 210px;
-}
-/* line 30, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail a:hover, .thumbnail-item > .thumbnail a:focus {
-  text-decoration: none;
-}
-/* line 34, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail .thumbnail-title {
-  font-size: 14px;
-}
-/* line 37, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail .wrap {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  border: 1px solid white;
-  border-radius: 4px;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-}
-/* line 49, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail .icon-zoom-in {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  font-size: 30px;
-  line-height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -14px;
-  margin-left: -14px;
-  color: #fff;
-}
-/* line 61, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail:hover .wrap {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-/* line 64, ../../app/assets/stylesheets/theme/_products.scss */
-.thumbnail-item > .thumbnail:hover .icon-zoom-in {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-/* line 74, ../../app/assets/stylesheets/theme/_products.scss */
+/* line 5, ../../app/assets/stylesheets/theme/_products.scss */
 .single-product h4 {
-  margin-top: 20px;
-  border-bottom: 2px solid #ff6600;
+  margin-top: 30px;
+  padding-bottom: 3.33333px;
+  border-bottom: 3px solid #203a42;
   text-transform: uppercase;
-  color: #333333;
+  color: #ff6600;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
-/* line 80, ../../app/assets/stylesheets/theme/_products.scss */
-.single-product .table {
+/* line 14, ../../app/assets/stylesheets/theme/_products.scss */
+.single-product .table, .single-product .copy-text table, .copy-text .single-product table {
   width: 100%;
 }
-/* line 83, ../../app/assets/stylesheets/theme/_products.scss */
+/* line 17, ../../app/assets/stylesheets/theme/_products.scss */
 .single-product .carousel {
   margin-bottom: 20px;
+}
+/* line 20, ../../app/assets/stylesheets/theme/_products.scss */
+.single-product .btn-reservation {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 
 /* FIX FOR IE DEVICE_WIDTH BUG
@@ -10488,14 +10583,14 @@ span.valid {
   width: device-width;
 }
 
-/* line 23, ../../app/assets/stylesheets/public.css.scss */
+/* line 26, ../../app/assets/stylesheets/public.css.scss */
 .placeholder {
   color: #999999;
 }
 
 /* FIX FOR GMAP BUG
 -------------------------------------------------- */
-/* line 29, ../../app/assets/stylesheets/public.css.scss */
+/* line 32, ../../app/assets/stylesheets/public.css.scss */
 #map-canvas {
   height: 350px;
   width: 100%;
@@ -10504,7 +10599,7 @@ span.valid {
   box-sizing: content-box;
   margin-bottom: 20px;
 }
-/* line 34, ../../app/assets/stylesheets/public.css.scss */
+/* line 37, ../../app/assets/stylesheets/public.css.scss */
 #map-canvas img {
   max-width: none;
   vertical-align: middle;
@@ -10512,12 +10607,32 @@ span.valid {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 42, ../../app/assets/stylesheets/public.css.scss */
-.page-header {
-  border-bottom: 6px solid black;
+/* line 45, ../../app/assets/stylesheets/public.css.scss */
+.table-rates {
+  font-size: 12px;
 }
-/* line 44, ../../app/assets/stylesheets/public.css.scss */
-.page-header h1 {
-  text-transform: uppercase;
-  display: inline-block;
+
+/* line 50, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail {
+  min-height: 100px;
+}
+/* line 52, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail .thumbnail-image {
+  float: left;
+}
+/* line 56, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail a > img {
+  margin-left: 0;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 56, ../../app/assets/stylesheets/public.css.scss */
+  #thumbnails-partner .thumbnail a > img {
+    margin-left: 0;
+  }
+}
+/* line 65, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail .caption {
+  float: left;
+  padding-left: 20px;
 }

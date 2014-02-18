@@ -1,7 +1,11 @@
 @import url(wym_formatting.css);
 @import url(wym_theme.css);
 @import url(wym_iframe.css);
+<<<<<<< HEAD
 /* line 4, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/gko_wym.css.scss */
+=======
+/* line 4, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/gko_wym.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 .wym_skin_gko .wym_iframe iframe {
   background: #ccc;
 }

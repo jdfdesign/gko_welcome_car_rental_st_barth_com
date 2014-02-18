@@ -7,73 +7,56 @@
     letter-spacing: 1px;
     font-size: 11px;
     @include transition(all 0.3s ease-in-out);
-    &:hover {
-      color: #000;
-    } 
   }
 }
 
 .navbar-brand {
   padding-top: ($navbar-height - $th-brand-logo-height)/2;
   padding-bottom: ($navbar-height - $th-brand-logo-height)/2;
-}
-
-.navbar:before, .navbar:after{
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
-  -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-
-.navbar:after{
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
+  padding-right: 0;
 }
 
 /* CUSTOMIZE THE LANGUAGE MENU
 -------------------------------------------------- */
 .topbar {
-  background-color: #000;
-  color: #fff;
-  p {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  background-color: $theme-secondary-color;
+  color: $brand-primary;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  a {
+    display: block;
+    text-align: center;
+    padding: 0;
+    font-size: $font-size-small;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: #fff;
+    }
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+      text-align: left;
+    }
   }
 }
 #locales-menu {
+  
   .nav {
     float: right;
   }
   .nav > li > a { 
-    color: #fff;
+    color: $brand-primary;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 11px;
-    padding: 15px 30px;
+    font-size: 10px;
+    padding: 0 30px;
     background-color: transparent;
     @include transition(all 0.3s ease-in-out);
+    padding-right: 15px;
     &:hover,
     &:focus {
       background-color: transparent;
-      color: $brand-primary;
+      color: #fff;
     }
   }
 }

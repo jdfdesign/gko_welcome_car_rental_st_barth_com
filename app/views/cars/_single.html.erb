@@ -3,9 +3,7 @@
 <article class="container single-product"> 
   <div class="page-header">
     <h1><%= resource.title %></h1>
-    <div class="pull-right">
-      <%= link_to(t("custom.back_to_fleet"), parent.public_url, :class => "btn btn-default") %>
-    </div>
+    <%= link_to(t("custom.back_to_fleet"), parent.public_url) %>
   </div>
   <div class="row">
     <div class="col-xs-12 col-sm-6">
@@ -13,32 +11,38 @@
     </div>
     <div class="col-xs-12 col-sm-6">
       <%= render_copy_text(resource.body) %>
-      <h4><%= raw "#{t('custom.specifications')}&nbsp;:" %></h4>
+      <h4><%= raw "#{t('custom.specifications')}" %></h4>
       <%= render_copy_text(resource.specifications) %>
-      <h4><%= raw "#{t('custom.rates')}&nbsp;:" %></h4>
-      <table class="table">
-        <tr>
-          <td><%= raw "#{t('custom.season_one')}&nbsp;:" %></td>
-          <td><%= raw "#{resource.season_one_price_per_day}$ / #{t('custom.per_day')}" %></td>
-          <td><%= raw "#{resource.season_one_price_per_week}$ / #{t('custom.per_week')}" %></td>
-        </tr>
-        <tr>
-          <td><%= raw "#{t('custom.season_two')}&nbsp;:" %></td>
-          <td><%= raw "#{resource.season_two_price_per_day}$ / #{t('custom.per_day')}" %></td>
-          <td><%= raw "#{resource.season_two_price_per_week}$ / #{t('custom.per_week')}" %></td>
-        </tr>
-        <tr>
-          <td><%= raw "#{t('custom.season_three')}&nbsp;:" %></td>
-          <td><%= raw "#{resource.season_three_price_per_day}$ / #{t('custom.per_day')}" %></td>
-          <td><%= raw "#{resource.season_three_price_per_week}$ / #{t('custom.per_week')}" %></td>
-        </tr>
-        <tr>
-          <td><%= raw "#{t('custom.insurance')}&nbsp;:" %></td>
-          <td><%= raw "#{resource.insurance_price_per_day}$ / #{t('custom.per_day')}" %></td>
-          <td><%= raw "#{resource.insurance_price_per_week}$ / #{t('custom.per_week')}" %></td>
-        </tr>
-      </table>
-      <%= link_to(t("custom.reserve"), reservations_path, :class => "btn btn-primary btn-large btn-block") %>
+      <h4><%= raw "#{t('custom.rates')}" %></h4>
+      <div class="table-responsive">
+        <table class="table">
+          <tr>
+            <td><strong><%= raw "#{t('custom.season_one')}" %></strong></td>
+            <td><%= raw "#{resource.season_one_price_per_day}&nbsp;€ / #{t('custom.per_day')}" %></td>
+            <td><%= raw "#{resource.season_one_price_per_week}&nbsp;€ / #{t('custom.per_week')}" %></td>
+          </tr>
+          <tr>
+            <td><strong><%= raw "#{t('custom.season_two')}" %></strong></td>
+            <td><%= raw "#{resource.season_two_price_per_day}&nbsp;€ / #{t('custom.per_day')}" %></td>
+            <td><%= raw "#{resource.season_two_price_per_week}&nbsp;€ / #{t('custom.per_week')}" %></td>
+          </tr>
+          <tr>
+            <td><strong><%= raw "#{t('custom.season_three')}" %></strong></td>
+            <td><%= raw "#{resource.season_three_price_per_day}&nbsp;€ / #{t('custom.per_day')}" %></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><strong><%= raw "#{t('custom.insurance')}" %></strong></td>
+            <td><%= raw "#{resource.insurance}&nbsp;€ / #{t('custom.per_day')}" %></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><strong><%= raw "#{t('custom.deductible')}" %></strong></td>
+            <td><%= raw "#{resource.deductible}&nbsp;€" %></td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+      </div>
     </div> 
   </div>
 </article>

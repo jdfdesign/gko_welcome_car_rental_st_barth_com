@@ -6,7 +6,7 @@ class CarsController < ContentsController
   protected
   
   def load_resources
-    end_of_association_chain.includes(self.includes).with_globalize
+    end_of_association_chain.includes(self.includes).with_globalize.order("cars.season_one_price_per_week")
   end
 
   def find_resource

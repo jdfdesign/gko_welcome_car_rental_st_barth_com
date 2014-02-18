@@ -18,13 +18,21 @@
 */
 /* VISUAL FEEDBACK */
 /* basic */
+<<<<<<< HEAD
 /* line 24, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 body {
   background: #fff;
 }
 
 /* make HTML blocks visible */
+<<<<<<< HEAD
 /* line 59, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 59, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 p,
 h1,
 h2,
@@ -62,235 +70,411 @@ time {
   border: 1px dotted #cccccc;
 }
 
+<<<<<<< HEAD
 /* line 66, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 66, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 td {
   background: #F0F4F8;
 }
 
+<<<<<<< HEAD
 /* line 70, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 70, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 th {
   background: #ffffcc;
 }
 
+<<<<<<< HEAD
 /* line 75, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 75, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 ul,
 ol {
   border-left: 20px solid #B9C4D0;
   padding: 0px 5px;
 }
 
+<<<<<<< HEAD
 /* line 80, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 80, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 caption {
   background: #E4E4B0;
   padding: 5px;
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* line 86, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 86, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 table {
   font-size: 12px;
   width: 500px;
 }
 
+<<<<<<< HEAD
 /* line 91, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 91, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 td {
   width: 25%;
 }
 
+<<<<<<< HEAD
 /* line 95, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 95, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 blockquote {
   margin-left: 30px;
 }
 
+<<<<<<< HEAD
 /* line 99, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 99, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 pre {
   background-color: transparent;
   border: 1px solid white;
 }
 
 /* Gecko min height fix */
+<<<<<<< HEAD
 /* line 105, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 105, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 p {
   min-height: 1em;
 }
 
 /*min-height is needed under Firefox, because empty parargraphs */
+<<<<<<< HEAD
 /* line 110, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 110, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 html.ie p {
   min-height: auto;
 }
 
 /* but we have to remove it under IE7 because it triggers the 'haslayout' mode */
+<<<<<<< HEAD
 /* line 115, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 115, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 td {
   height: 1.6em;
 }
 
 /* labels */
+<<<<<<< HEAD
 /* line 120, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 120, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 p {
   background-image: url(/assets/wymeditor/skins/gko/html5/p.png);
 }
 
+<<<<<<< HEAD
 /* line 124, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 124, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 h1 {
   background-image: url(/assets/wymeditor/skins/gko/html5/h1.png);
 }
 
+<<<<<<< HEAD
 /* line 128, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 128, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 h2 {
   background-image: url(/assets/wymeditor/skins/gko/html5/h2.png);
 }
 
+<<<<<<< HEAD
 /* line 132, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 132, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 h3 {
   background-image: url(/assets/wymeditor/skins/gko/html5/h3.png);
 }
 
+<<<<<<< HEAD
 /* line 136, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 136, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 h4 {
   background-image: url(/assets/wymeditor/skins/gko/html5/h4.png);
 }
 
+<<<<<<< HEAD
 /* line 140, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 140, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 h5 {
   background-image: url(/assets/wymeditor/skins/gko/html5/h5.png);
 }
 
+<<<<<<< HEAD
 /* line 144, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 144, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 h6 {
   background-image: url(/assets/wymeditor/skins/gko/html5/h6.png);
 }
 
+<<<<<<< HEAD
 /* line 148, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 148, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 blockquote {
   background-image: url(/assets/wymeditor/skins/gko/html5/blockquote.png);
 }
 
+<<<<<<< HEAD
 /* line 152, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 152, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 pre {
   background-image: url(/assets/wymeditor/skins/gko/html5/pre.png);
 }
 
+<<<<<<< HEAD
 /* line 156, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 156, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 meter {
   background-image: url(/assets/wymeditor/skins/gko/html5/meter.png);
 }
 
+<<<<<<< HEAD
 /* line 160, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 160, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 nav {
   background-image: url(/assets/wymeditor/skins/gko/html5/nav.png);
 }
 
+<<<<<<< HEAD
 /* line 164, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 164, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 ruby {
   background-image: url(/assets/wymeditor/skins/gko/html5/ruby.png);
 }
 
+<<<<<<< HEAD
 /* line 168, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 168, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 rt {
   background-image: url(/assets/wymeditor/skins/gko/html5/rt.png);
 }
 
+<<<<<<< HEAD
 /* line 172, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 172, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 rp {
   background-image: url(/assets/wymeditor/skins/gko/html5/rp.png);
 }
 
+<<<<<<< HEAD
 /* line 176, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 176, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 article {
   background-image: url(/assets/wymeditor/skins/gko/html5/article.png);
 }
 
+<<<<<<< HEAD
 /* line 180, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 180, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 aside {
   background-image: url(/assets/wymeditor/skins/gko/html5/aside.png);
 }
 
+<<<<<<< HEAD
 /* line 184, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 184, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 command {
   background-image: url(/assets/wymeditor/skins/gko/html5/command.png);
 }
 
+<<<<<<< HEAD
 /* line 188, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 188, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 details {
   background-image: url(/assets/wymeditor/skins/gko/html5/details.png);
 }
 
+<<<<<<< HEAD
 /* line 192, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 192, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 summary {
   background-image: url(/assets/wymeditor/skins/gko/html5/summary.png);
 }
 
+<<<<<<< HEAD
 /* line 196, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 196, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 figure {
   background-image: url(/assets/wymeditor/skins/gko/html5/figure.png);
 }
 
+<<<<<<< HEAD
 /* line 200, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 200, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 figcaption {
   background-image: url(/assets/wymeditor/skins/gko/html5/figcaption.png);
 }
 
+<<<<<<< HEAD
 /* line 204, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 204, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 footer {
   background-image: url(/assets/wymeditor/skins/gko/html5/footer.png);
 }
 
+<<<<<<< HEAD
 /* line 208, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 208, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 header {
   background-image: url(/assets/wymeditor/skins/gko/html5/header.png);
 }
 
+<<<<<<< HEAD
 /* line 212, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 212, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 hgroup {
   background-image: url(/assets/wymeditor/skins/gko/html5/hgroup.png);
 }
 
+<<<<<<< HEAD
 /* line 216, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 216, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 mark {
   background-image: url(/assets/wymeditor/skins/gko/html5/mark.png);
 }
 
+<<<<<<< HEAD
 /* line 220, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 220, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 progress {
   background-image: url(/assets/wymeditor/skins/gko/html5/progress.png);
 }
 
+<<<<<<< HEAD
 /* line 224, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 224, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 section {
   background-image: url(/assets/wymeditor/skins/gko/html5/section.png);
 }
 
+<<<<<<< HEAD
 /* line 228, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 228, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 time {
   background-image: url(/assets/wymeditor/skins/gko/html5/time.png);
 }
 
 /* specific HTML elements */
+<<<<<<< HEAD
 /* line 233, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 233, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 caption {
   text-align: left;
 }
 
+<<<<<<< HEAD
 /* line 237, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 237, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 img {
   margin-right: 5px;
   border: 1px solid transparent;
 }
 
+<<<<<<< HEAD
 /* line 242, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 242, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 a img {
   border: 1px dotted blue !important;
 }
 
+<<<<<<< HEAD
 /* line 246, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 246, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 acronym {
   border: 1px solid gray;
 }
 
 /* visual feedback for non-valid nesting of elements*/
+<<<<<<< HEAD
 /* line 260, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 260, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 h1 h1, h1 h2, h1 h3, h1 h4, h1 h5, h1 h6, h1 p, h1 pre, h1 address,
 h2 h1, h2 h2, h2 h3, h2 h4, h2 h5, h2 h6, h2 p, h2 pre, h2 address,
 h3 h1, h3 h2, h3 h3, h3 h4, h3 h5, h3 h6, h3 p, h3 pre, h3 address,
@@ -308,17 +492,29 @@ address p, address pre, address address {
 }
 
 /* indicate invalid text area fields */
+<<<<<<< HEAD
 /* line 268, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 268, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 body.fieldWithErrors {
   background-color: #ffecf0 !important;
 }
 
+<<<<<<< HEAD
 /* line 272, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 272, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 img.selected_by_wym {
   border: 1px dashed #22a7f2;
 }
 
+<<<<<<< HEAD
 /* line 294, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-618eeaae867e/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+=======
+/* line 294, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-cbed22504428/gko_core/app/assets/stylesheets/wym_iframe.css.scss */
+>>>>>>> 4c935f4d60018dc12df717dda789944943f1a2b9
 article,
 aside,
 command,

@@ -27,7 +27,7 @@ $brand-info:            #5bc0de;
 // Scaffolding
 // -------------------------
 
-$body-bg:               #fff;
+$body-bg:               #f1eee7;//#fff;
 $text-color:            $gray-dark;
 
 // Links
@@ -87,7 +87,7 @@ $padding-small-horizontal:       10px;
 $line-height-large:              1.33;
 $line-height-small:              1.5;
 
-$border-radius-base:             4px;
+$border-radius-base:             0;//4px;
 $border-radius-large:            6px;
 $border-radius-small:            3px;
 
@@ -121,7 +121,7 @@ $btn-default-bg:                 #fff;
 $btn-default-border:             #ccc;
 
 $btn-primary-color:              #fff;
-$btn-primary-bg:                 $brand-primary;
+$btn-primary-bg:                 $theme-secondary-color;
 $btn-primary-border:             darken($btn-primary-bg, 5%);
 
 $btn-success-color:              #fff;
@@ -152,7 +152,7 @@ $input-bg-disabled:              $gray-lighter;
 $input-color:                    #1a1a1a;//$gray;
 $input-border:                   #ccc;
 $input-border-radius:            $border-radius-base;
-$input-border-focus:             #66afe9;
+$input-border-focus:             $theme-color;//#66afe9;
 
 $input-color-placeholder:        $gray-light;
 
@@ -254,7 +254,7 @@ $grid-float-breakpoint:     $screen-sm-min;
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    $th-brand-logo-height + $line-height-computed;//50px
+$navbar-height:                    $th-brand-logo-height + $line-height-computed * 1.5;//50px
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             0;//$border-radius-base;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2);
@@ -265,7 +265,7 @@ $navbar-default-bg:                $brand-primary;//#f8f8f8;
 $navbar-default-border:            $brand-primary;//darken($navbar-default-bg, 6.5%);
 
 // Navbar links
-$navbar-default-link-color:                #fff;//#777;
+$navbar-default-link-color:                #000;//#777;
 $navbar-default-link-hover-color:          #fff;//#333;
 $navbar-default-link-hover-bg:             transparent;
 $navbar-default-link-active-color:         #fff;//#555;
@@ -445,7 +445,7 @@ $modal-content-border-color:                   rgba(0,0,0,.2);
 $modal-content-fallback-border-color:          #999;
 
 $modal-backdrop-bg:           #000;
-$modal-header-border-color:   #e5e5e5;
+$modal-header-border-color:   $gray-dark;//#e5e5e5;
 $modal-footer-border-color:   $modal-header-border-color;
 
 
@@ -609,7 +609,7 @@ $abbr-border-color:           $gray-light;
 $headings-small-color:        $gray-light;
 $blockquote-small-color:      $gray-light;
 $blockquote-border-color:     $gray-lighter;
-$page-header-border-color:    #000;//$gray-lighter;
+$page-header-border-color:    $theme-secondary-color;//$gray-lighter;
 
 // Miscellaneous
 // -------------------------

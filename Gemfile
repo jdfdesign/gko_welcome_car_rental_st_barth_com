@@ -11,6 +11,7 @@ group :production do
    gem 'gko_core'
    gem 'gko_auth'
    gem 'gko_inquiries'
+   gem "gko_documents"
   end
 end
 
@@ -18,4 +19,5 @@ end
 #  gem "gko_core", :path => '~/Github/gko_cms3/gko_core'
 #  gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'
 #  gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
+#  gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
 #end
