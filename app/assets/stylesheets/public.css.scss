@@ -64,7 +64,10 @@ $th-brand-logo-height: 58px;
     }
     .caption {
       float: left;
-      padding-left: 20px;
+      padding: 0 0 0 100px;
+    }
+    .thumbnail-title {
+      margin-top: 0;
     }
   }
 }

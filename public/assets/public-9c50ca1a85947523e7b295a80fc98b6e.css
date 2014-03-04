@@ -10429,10 +10429,15 @@ span.valid {
   color: #fff;
 }
 
+/* line 1, ../../app/assets/stylesheets/theme/_carousel.scss */
+.carousel {
+  margin-bottom: 20px;
+}
+
 /* line 1, ../../app/assets/stylesheets/theme/_thumbnails.scss */
 .thumbnail {
   position: relative;
-  min-height: 210px;
+  min-height: 240px;
 }
 /* line 6, ../../app/assets/stylesheets/theme/_thumbnails.scss */
 .thumbnail a:hover, .thumbnail a:focus {
@@ -10635,5 +10640,9 @@ span.valid {
 /* line 65, ../../app/assets/stylesheets/public.css.scss */
 #thumbnails-partner .thumbnail .caption {
   float: left;
-  padding-left: 20px;
+  padding: 0 0 0 100px;
+}
+/* line 69, ../../app/assets/stylesheets/public.css.scss */
+#thumbnails-partner .thumbnail .thumbnail-title {
+  margin-top: 0;
 }

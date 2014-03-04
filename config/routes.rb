@@ -10,7 +10,11 @@ GkoWelcomeCarRentalStBarthCom::Application.routes.draw do
   namespace :admin do
     resources :sites do
       resources :car_lists do
-        resources :cars
+        resources :cars do
+          collection do
+            get :selected
+          end
+        end
       end
     end
   end
