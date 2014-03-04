@@ -10639,10 +10639,9 @@ span.valid {
 }
 /* line 65, ../../app/assets/stylesheets/public.css.scss */
 #thumbnails-partner .thumbnail .caption {
-  float: left;
   padding: 0 0 0 100px;
 }
-/* line 69, ../../app/assets/stylesheets/public.css.scss */
+/* line 68, ../../app/assets/stylesheets/public.css.scss */
 #thumbnails-partner .thumbnail .thumbnail-title {
   margin-top: 0;
 }
